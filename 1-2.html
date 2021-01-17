@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="网页栅格布局.css">
+    <style> 
+       *{
+           margin:0px;
+           list-style-type: none;
+           text-decoration: none;
+       }
+       .con{
+
+       }
+       .con-dl{
+           width: 100%;
+           height:500px;
+          
+       }
+       .con-dl__dt{
+           margin-left: 50px;
+           border: 1px solid #0000;
+       }
+       .con-dl__dd{
+           border: solid 2px #8181;
+           margin-left: 100px;
+           transform: translateY(-100px);
+       }
+       .con-dl__dd:hover{
+           
+       }
+       .con-dl__dd--span{
+           border: solid 2px #00ff00;
+       }
+       .con-dl__dt--span:hover{
+           color: #ffffff;
+           box-shadow: 0px 0px 10px #818181;
+       }
+       .cont-item{
+           border: 1px solid #818181;
+       }
+       .cont-item__1{
+        border: 1px solid #818181;
+        background-color: #ff00ff;
+        height: 50px;
+        text-align: center;
+        width: 100%;
+       }
+       .con-dl__dt--mg{
+           padding: solid 5px #ffff00;
+           width: 300px;
+           text-align: center;
+
+       }
+
+    </style>
+</head>
+<body>
+   <div class="con">
+       <dl class="con-dl grid">
+           <dt class="con-dl__dt grid-cell-1"> <img class=".con-dl__dt--mg" src="../img/5.jpg" alt=""></dt>
+           <dd class="con-dl__dd grid-cell-2"><span class="con-dl__dd--span">一张漂亮的照片</span></dd>
+       </dl>
+   </div>
+   <div class="grid cont">
+       <div class="grid-cell-1 cont-item"><div class="cont-item__1"></div></div>
+       <div class="grid-cell-1 cont-item"><div class="cont-item__1"></div></div>
+       <div class="grid-cell-1 cont-item"><div class="cont-item__1"></div></div>
+       <div class="grid-cell-1 cont-item"><div class="cont-item__1"></div></div>
+       <div class="grid-cell-1 cont-item"><div class="cont-item__1"></div></div>
+       <div class="grid-cell-1 cont-item"><div class="cont-item__1"></div></div>
+   </div>
+   <div class="grid cont">
+        <div class="grid-cell-2 cont-item"><div class="cont-item__1"></div></div>
+        <div class="grid-cell-2 cont-item"><div class="cont-item__1"></div></div>
+        <div class="grid-cell-2 cont-item"><div class="cont-item__1"></div></div>
+    </div>
+    <div class="grid cont">
+            <div class="grid-cell-3 cont-item"><div class="cont-item__1"></div></div>
+            <div class="grid-cell-3 cont-item"><div class="cont-item__1"></div></div>
+    </div>
+    <div class="grid cont">
+            <div class="grid-cell-1 cont-item"><div class="cont-item__1"></div></div>
+            <div class="grid-cell-5 cont-item"><div class="cont-item__1"></div></div>
+     </div>
+     <div class="grid cont">
+            <div class="grid-cell-2 cont-item"><div class="cont-item__1"></div></div>
+            <div class="grid-cell-4 cont-item"><div class="cont-item__1"></div></div>
+     </div>
+     <div class="grid cont">
+            <div class="grid-cell-3 cont-item"><div class="cont-item__1"></div></div>
+            <div class="grid-cell-3 cont-item"><div class="cont-item__1"></div></div>
+     </div>
+</body>
+</html>

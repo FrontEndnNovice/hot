@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+    #menu{height: 33px;}
+    #menu ul li{
+        float: left;
+        line-height: 33px;
+        height: 33px;
+    }
+    #menu ul li .city{
+        width: 641px;
+        font-weight: bold;
+    }
+    #menu ul li .spance{margin: 0px 10px;}
+    li{list-style-type: none;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function openXuexiao(){
+            window.open("http://www.sdcit.edu.cn/");
+        }
+        function setStatus(){
+            window.status="hellolworld";
+        }
+        function openalert(){
+            window.alert("lello~!");
+        }
+        function Opnequeding(){
+            var b = window.confirm("你确定学校官方网站吗？")
+            if (b=true){
+                window.open("http://www.sdcit.edu.cn/");
+            }
+            else{
+                window.alert("你选择了否！");
+            }
+        }
+        function openHome(){
+            window.open("http://www.baidu.com/");
+        }
+       
+    </script>
+</head>
+<body>
+    <button onclick="openXuexiao()">打开学校官网</button>
+    <input type="button" value="设置状态栏目本" onclick="setStatus()">
+    <input type="button" value="弹出警告框" onclick="openalert()">
+    <input type="button" value="是否打开学校官网" onclick="Opnequeding">
+    <button onclick="openHome()">打开百度</button>
+    <div id="menu">
+            <ul>
+                <li class="city">武汉<a href="#">[切换城市]</a></li>
+                <li>乐购购，每天乐购购</li>
+                <li class="space"><a href="#">购乐中心</a></li>
+                <li class="space"><a href="#">购物车</a></li>
+                <li class="space"><a href="#">[登录]</a></li>
+                <li class="space "><a href="#">[注册]</a></li>
+            </ul>
+        </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新书入库服务器</title>
+    <link rel="stylesheet" href="新书入库.css">
+    <style> 
+       .input{
+           width: 50px;
+       }
+       h3{
+           text-align: center;
+       }
+       span{
+           margin-left: 100px;
+       }
+       input{
+           margin-left: 10px;
+           
+       }
+       form{
+           text-align: center;
+       }
+       .th1{
+           margin-left: 400px;
+       }
+       body{
+           background: radial-gradient(#818181,#ffffff);
+       }
+    </style>
+</head>
+<body>
+    <h3>新书入库</h3>
+    <hr/>
+    <table>
+        <tr>
+            <th ><span class="th1">书名:</span></th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th> <span class="th1">定价：</span></th>
+            <td><input class="input" type="text">元</td>
+        </tr>
+        <tr>
+            <th> <span class="th1">进价：</span></th>
+            <td><input class="input" type="text">元</td>
+        </tr>
+        <tr>
+            <th> <span class="th1">出版社：</span></th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th><span class="th1">ISBN:</span></th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th><span class="th1">出版日期:</span></th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th><span class="th1">作者：</span></th>
+            <td> <input type="text" name="zuozhe"></td>
+        </tr>
+        <tr>
+            <th><span class="th1">数量:</span></th>
+            <td><input class="input" type="text">本</td>
+        </tr>
+        <tr>
+            <th><span class="th1">所属类别：</span></th>
+            <td> <input class="input" type="text"></td>
+        </tr>
+        <tr>
+            <th><span class="th1">页数：</span></th>
+            <td> <input class="input" type="text">页</td>
+        </tr>
+        <tr>
+            <th><span class="th1">图片文件：</span></th>
+            <td> <input type="file" value="yulan..."></td>
+        </tr>
+        <tr>
+            <th><span class="th1">内容提要：</span></th>
+            <td><textarea name="textarea" id="textarea" cols="45" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <th><span class="th1">目录：</span></th>
+            <td><textarea name="textarea" id="textarea" cols="45" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td><input class="th1" type="button" value="添加"></td>
+            <td><input type="button" value="取消"></td>
+        </tr>
+        
+    </table>
+    
+</body>
+</html>

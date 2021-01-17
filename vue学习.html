@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #a{
+            border: solid 1px #ff0000;
+           width: 200px;
+           height: 200px;
+        }
+        #b{
+            border: solid 1px #0000ff;
+           width: 100px;
+           height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    
+   <div id="a">红元素</div>
+   <div id="b">绿元素</div>
+   <button id="ok">移动</button>
+    <script>
+        var ok= document.getElementById("ok");
+        ok.onclick = function(){
+             var a=document.getElementById("a");
+             var b=document.getElementById("b");
+             b.appendChild(a);
+        }
+      
+       var oof=a.nodeName;
+       var iif=a.nodeType;
+       document.write(oof);
+       document.write(iif);
+    </script>
+
+</body>
+</html>

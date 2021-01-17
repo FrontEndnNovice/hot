@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .d1{
+            border: solid 1px #000000;
+            width: 300px;
+            height: 120px;
+            margin:0px;
+            float: left;
+        }
+        .d2{
+
+            background-color: aquamarine;
+            width: 70px;
+            height: 20px;
+            color: #000000;
+            transition-delay: 100ms;
+            transition-duration: 1000ms;
+            transition-timing-function: ease-in-out;
+        }
+        .d2:hover{
+            text-align: center;
+            width: 120px;
+            background-color: blueviolet;
+            color: bisque;
+            transition: all 600ms linear 10ms;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transform: translate(10px,10px);
+            box-shadow: 0px 0px 10px 5px #ffff00;
+
+        }
+        #index{
+          float: left;
+        }
+        .ta-tr__imgs{
+            width: 100px;
+            height: 100px;
+           
+        }
+        .ta-tr__text{
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            
+        }
+        .ta-tr2__bton{
+            margin-left: 50px;
+        }
+        .hebing{
+            column-span: 3;
+        }
+        .xbk{
+            
+            margin: 0px;
+        }
+        .ta-tr{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <div class="d2">
+            过度效果
+        </div>
+    </div>
+    <div id="index">
+        <table class="index-ta">
+            <tr class="ta-tr">
+                <td  class="xbk"><img src="../img/7.jpg" class="ta-tr__imgs"></td>
+                <td  class="xbk"><span class="ta-tr__text">PK</span></td>
+                <td  class="xbk"><img src="../img/8.jpg" class="ta-tr__imgs"></td>
+            </tr>
+            <tr class="ta-tr2">
+                <td colspan="3" class="hebing"><input type="button" value="竞赛" class="ta-tr2__bton"><input type="button" value="预约" class="ta-tr2__bton"></td>
+                
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

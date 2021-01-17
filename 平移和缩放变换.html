@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      #timings-demo{
+          border: 1px solid #ccc;
+          padding: 10px;
+          height: 300px;
+          width: 400px;
+      }
+      .demo-box{
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        background-color: #96c;
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px reda(102,153,0,0.5);
+        margin-bottom: 10px;
+      }
+      #ease{
+          transition: all 5s ease 0.3s;
+          background-color: #f36;
+      }
+      #ease-in{
+          transition: all 3s ease-in 0.5s;
+          background-color: #369;
+      }
+      #ease-out{
+          transition: all 5s ease-out 0s;
+          background-color: #636;
+      }
+      #ease-in-out{
+          transition: all 1s ease-in-out 2s;
+          background-color: #3e6;
+      }
+      #linear{
+          transition: all 6s linear 0s;
+          background-color: #999;
+      }
+      #timings-demo:hover .demo-box{
+          background-color: #369;
+          border: 1px solid rgba(255,230,255,0.8);
+          border-radius: 25px;
+          margin-left: 280px;
+          height: 30px;
+          line-height: 30px;
+          margin-bottom: 15px;
+      }
+      ul{
+          width: 300px;
+          list-style-type: none;
+      }
+      ul li{
+          width: 100px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          background-color: #c3c7c3;
+          border: solid 1px #000000;
+          box-shadow: inset 0px 0px 15px #616161;
+          border-top-right-radius: 20px;
+          transition-delay: 100ms;
+          transition-duration: 250ms;
+      }
+      ul li:hover{
+          width: 200px;
+          background-color: #250672;
+          color: #ffffff;
+          box-shadow: 5px 5px 15px #000000;
+          transition: all 600ms linear 10ms;
+      }
+    </style>
+</head>
+<body>
+    <div id="timings-demo">
+        <div id="ease" class="demo-box">Ease</div>
+        <div id="ease-in" class="demo-box">Ease-in</div>
+        <div id="ease-out" class="demo-box">Eaes-out</div>
+        <div id="ease-in-out" class="demo-box">Ease-in-out</div>
+        <div id="linear" class="demo-box">Linear</div>
+    </div>
+    <ul>
+        <li>订单管理</li>
+        <li>商品管理</li>
+        <li>客户管理</li>
+        <li>类别管理</li>
+        <li>权限管理</li>
+    </ul>
+</body>
+</html>

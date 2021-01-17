@@ -1,0 +1,60 @@
+                         弹性布局的相关属性
+display:         值为flex时，创建弹性布局容器。
+flex-direction： 伸缩流方向，其取值见表2.6.
+flex-wrap：      伸缩流换行，其取值见变2.7.
+flex-flow；      伸缩流（包括换行与方向），综合了flex-direction和 flex-wrap。
+juatify-content： 主轴对齐，其取值见表2.8.
+align-iems：     侧轴对齐，其取值见表2.9.
+align-content：  堆栈伸缩流，其表见2.10，只有flex-wrap：wrap 和 wrap-reverse 设置下伸缩项目存在多行时才生效。
+flex：           用于设置或检索弹性模型对象的子元素如何分配空间，是flex-grow、flex-shrink 和 flex-basis 属性的简写属性，即伸缩性。默认值是 0 1 auto。
+order：          设置或检索弹性模型对象的子元素出现的顺序，默认值是 0.
+flex-grow：     一个数字，规定项目将相对于其他灵活的项目进行扩展的量，即扩展比率。
+flex-shrink：   一个数字，规定项目将相对于其他灵活的项目进行收缩的量，即收缩比率。
+flex-basis：    项目的长度。合法值 “auto” “inherit” 或一个后跟 “%” “px” “em” 或任何其他长度单位的数字，即伸缩基准值。
+
+表2.6 flex-direction 属性值
+
+row（默认值）：   主轴为水平方向，排列顺序与页面的文档顺序相同。
+row-reverse： 主轴为水平方向，排列顺序与页面的文档顺序相反。
+column： 主轴方向为垂直方向，排列顺序为从上到下。
+colum-reverse：  主轴方向为垂直方向，排列顺序从下到上。
+
+表 2.7 flex-wrap 属性值
+
+nowrwap（默认值）：   容器中的伸缩项目只占满容器在主轴方向的一行，可能出现伸缩项目互相重叠或超出容器范围的现象。
+wrap：   当容器中的伸缩项目超出容器在主轴方向的一行时，会把伸缩项目排列到下一行。下一行的位置与交叉轴的方向一致。
+wrap-veverse：   与wrap的含义类似，不同的是下一行的位置与交叉轴的位置相反。
+column-reverse：    主轴为垂直方向。排列顺序从下到上。
+
+表 2.8 justify-content 属性值
+
+flex-start： 默认值。项目位于容器的开头。
+flex-end：   项目位于容器的结尾。
+center： 项目位于容器的中心。
+space-between：  项目位于各行之间留有空白的容器内。
+space-around：   项目位于各行之前、之间、之后都留有空白的容器内。
+
+表 2.9 align-items 属性值
+
+stretch：    默认值。项目被拉伸以适应容器。
+center：     项目位于容器的中心。
+flex-start：     项目位于容器的头。
+flex-end：   项目位于容器的结尾。
+baseline；   项目位于容器的基线上。
+
+表 2.10 align-content 属性值
+
+stretch：    默认值。项目被拉伸以适应容器。
+center：     项目位于容器的中心。 
+flex-start：     项目位于容器的头。
+flex-end：   项目位于容器的结尾。
+space-between：  项目位于各行之间留有空白的容器内。
+space-around ：  项目位于各行之前、之间、之后都留有空白的容器内。
+
+说明：
+flex（伸缩性）是flex-grow（伸缩性）、flex-shrink（收缩比率）和flex-basis（伸缩基准值）的缩写。
+一般写法如下：
+flex：none等同于 flex：0 0 auto，表示宽度为原始宽度，不发生扩展或收缩。
+flex：auto等同于 flex：1 1 auto，表示除了占据原始的宽度外，还要分配剩余宽度（包括扩展或收缩）。
+flex；0 等同于flex：0 1 0%，表示收缩为最小的宽度。
+flex：1 等同于flex：1 1 1%，表示分配所有宽度（包括扩展或收缩）。

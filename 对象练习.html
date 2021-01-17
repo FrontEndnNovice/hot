@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript">
+      function ButtonWrite_onclick(){
+          document.write("Hello world");
+      }
+      function openbaidu(){
+      window.open("http://www.baidu.com");
+    }
+    function openalert(){
+        window.alert("警告框提示！");
+    }
+    function openconfirm(){
+        window.confirm("确认对话框！");
+    }
+    </script>
+</head>
+<body>
+    <p>
+        <input id="ButtonWrite" type="button" value="显示 Hello World" onclick="return ButtonWrite_onclick()"/>
+        <input type="button" value="打开百度" onclick="openbaidu()">
+        <input type="button" onclick="openalert()" value="警告框"/>
+        <input type="button" onclick="openconfirm()" value="确认对话框！"/>
+    </p>
+</body>
+</html>

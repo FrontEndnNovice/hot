@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        setlinterval("show()",1000);
+        function show(){
+            var date =new Date();
+            var now="";
+            now=date.getFullYear()+"-";
+            now=now+(date.getMonth()+1)+"-";
+            now=now+date.getDate()+"-";
+            now=now+date.getHours()+"-";
+            now=now+date.getMinutes()+"-";
+            now=now+date.getSeconds()+"-";
+            document.getElementById("nowDiv").innerHTML=now;
+            }
+    </script>
+    <style>
+        img{
+            width: 120px;
+        }
+        dd{
+            align-content: center;
+            font-size: 10px;
+            margin: 0px;
+        }
+        td{
+            border: 2px solid #660066;
+        }
+        .flex-lianxi1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-lianxi1">
+        <table>
+            <tr>
+                <td><dt><img src="../img/2.jpg" alt="图片2"></dt><dd>我的第二张图片</dd></td>
+                <td><dt><img src="../img/3.jpg" alt="图片3"></dt><dd>我的第三张图片</dd></td>
+                <td><dt><img src="../img/5.jpg" alt="图片5"></dt><dd>我的第五张图片</dd></td>
+                <td><dt><img src="../img/6.jpg" alt="图片6"></dt><dd>我的第六张图片</dd></td>
+                <td><dt><img src="../img/7.jpg" alt="图片7"></dt><dd>我的第七张图片</dd></td>
+                <td><dt><img src="../img/8.jpg" alt="图片8"></dt><dd>我的第八张图片</dd></td>
+                <td><dt><img src="../img/9.jpg" alt="图片9"></dt><dd>我的第九张图片</dd></td>
+                <td><dt><img src="../img/10.jpg" alt="图片10" ></dt><dd>我的第十张图片</dd></td>
+                <td><dt><img src="../img/11.jpg" alt="图片11"></dt><dd>我的第十一张图片</dd></td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>

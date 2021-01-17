@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动画效果</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        li{
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #c7c7c3;
+            border-left: solid 1px #000000;
+            box-shadow: inset 0px 0px 15px #616161;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        @keyframes menu-anim{
+            to{
+                width: 200px;
+                background-color: #222222;
+                color: #ffffff;
+                box-shadow: 5px 5px 15px #000000;
+
+            }
+        }
+        li:hover{
+            animation: 600ms  linear 10ms alternate ;
+            animation-name: menu-anim;
+            animation-iteration-count: 3;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        #react{
+            width: 200px;
+            height:200px;
+            margin: 200px auto;
+            transform-style:preserve-3d;
+            animation:rotate 20s infinite;
+            animation-timing-function: linear;
+        }
+        #react div{
+            position:absolute;
+            transition: all .4s;
+        } 
+        .out-left{
+            transform: rotateY(90deg) translateZ(100px);
+            
+        }
+        .out-right{
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .out-frount{
+            transform: translateZ(100px);
+        }
+        .out-back{
+            transform: translateZ(-100px);
+        }
+        .out-top{
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .out-bottom{
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        @keyframes rotate{
+    from{transform: rotateX(0deg) rotateY(0deg);}
+    to{transform: rotateX(360deg) rotateY(360deg);}
+}
+        .xuan{
+            transform: rotateY(60deg);
+        }
+    </style>
+</head>
+<body>
+   
+        <ul>
+            <li>订单管理</li>
+            <li>商品管理</li>
+            <li>客户管理</li>
+        </ul>
+    <div id="react">
+        <div class="out-left">
+            <img src="../img/6.jpg" alt="">
+        </div>
+        <div class="out-right">
+                <img src="../img/7.jpg" alt="">
+        </div>
+        <div class="out-frount">
+                <img src="../img/8.jpg" alt="">
+        </div>
+        <div class="out-back">
+                <img src="../img/9.jpg" alt="">
+        </div>
+        <div class="out-top">
+                <img src="../img/10.jpg" alt="">
+        </div>
+        <div class="out-bottom">
+                <img src="../img/5.jpg" alt="">
+            </div>
+    </div>
+    <div class="xuan">
+        <img src="../img/3.jpg" alt="">
+    </div>
+</body>
+</html>

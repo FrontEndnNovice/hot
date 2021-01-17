@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    *{
+        margin: 0px;
+    }
+    li{
+        list-style: none;
+        margin: 0;
+    }
+    #outbox{
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        float: left;
+        border: solid 1px #000000;
+    }
+    img{
+        width: 300px;
+        height: 200px;
+    }
+    button{
+        height: 200px;
+        line-height: 200px;
+        float: left;
+        transform: translate()
+    }
+    
+    </style>
+</head>
+<body>
+    <button onclick="left"><</button>
+  <div id="outbox">
+      <ul class="inbox">
+          <li>
+              <img src="../img/2.jpg" alt="">
+              <img src="../img/3.jpg" alt="">
+              <img src="../img/5.jpg" alt="">
+          </li>
+      </ul>
+      
+  </div>
+  <button onclick="right">></button>
+  <script>
+      var left=function(){
+         var img =  document.getElementsByName(img)[0];
+        img.style.transfrom.tranlatex(-300);
+        return left;
+      }
+      document.write(left());
+  </script>
+</body>
+</html>

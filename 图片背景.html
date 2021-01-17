@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../张锋的课/css.css">
+    <style>
+        img{
+            width:300px;
+        }
+        .hot{
+            margin: 5px;
+            flex-wrap: wrap;
+        }
+        .hor-item{
+            box-shadow: 0px 0px 10px #000000;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #e1e1e1;
+            margin: 5px;
+        }
+        .hor-item:hover{
+            box-shadow: 5px 5px 10px 5px #000000;
+            transition: all 600ms ease;
+        }
+        hot-item__image{
+            width: 100%;
+            height: auto;
+        }
+        hot-item__title{
+            font-size: 1.1em;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+        hot-item__text{
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            padding:5px;
+        }
+        .hot-title__text--discount{
+            background-color: #444444;
+            color: #e1e1e1;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 0.8em;
+        }
+        .hot-title__text--button{
+            background-color: #282d41;
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 0.8em;
+        }
+        .hot-title__text--button:hover{
+            background-color: #ffd700;
+        }
+        .dd{
+            
+           background: linear-gradient(red,blue,green,yellow);
+           
+        }
+        .di{
+            background-color: #000000;
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .di:hover{
+            background-color: #ffd700;  
+            box-shadow: 0 0 10px #282d41;
+        }
+        .box{
+            width: 300px;
+            height:150px;
+            padding: 10px;
+            background-image: url(../img/5.jpg);
+            border: dotted 20px #ff0000;
+            font-size: 16pt;
+            color: #ffffff;
+            margin-left: 5px;
+           
+        }
+        .origin1{
+            background-origin: border-box;
+        }
+        .origin2{
+            background-origin:content-box;
+        }
+        .origin3{
+            background-origin:padding-box;
+        }
+        .tt{
+            background:linear-gradient(red,blue,green,yellow);
+        }
+    </style>
+</head>
+<body>
+    <div class="hot grid">
+        <dl class="hot-item drid-cell-1">
+            <dt class=""><img class="hot-item__image" src="../img/9.jpg" alt=""></dt>
+            <dd class="hot-item__title">第九张</dd>
+            <dd class="hot-title__text">
+                <span class="hot-title__text--discount">-50%</span>
+                <a class="hot-title__text--button" href="#" >￥47元</a>
+            </dd>
+        </dl>
+        <dl class="hot-item  drid-cell-1">
+                <dt class=""><img class="hot-item__image" src="../img/8.jpg" alt=""></dt>
+                <dd class="hot-item__title">第八张</dd>
+                <dd class="hot-title__text">
+                    <span  class="hot-title__text--discount">-40%</span>
+                    <a class="hot-title__text--button" href="#">￥50元</a>
+                </dd>
+            </dl>
+            <dl class="hot-item  drid-cell-1">
+                    <dt class=""><img  class="hot-item__image" src="../img/7.jpg" alt=""></dt>
+                    <dd class="hot-item__title">第七张</dd>
+                    <dd class="">
+                        <span class="hot-title__text--discount">-300%</span>
+                        <a class="hot-title__text--button" href="#">￥67元</a>
+                    </dd>
+                </dl>
+                <dl class="hot-item  drid-cell-1">
+                        <dt class=""><img  class="hot-item__image" src="../img/6.jpg" alt=""></dt>
+                        <ddclass="hot-item__title">第六张</dd>
+                        <dd class="">
+                            <span class="hot-title__text--discount">-60%</span>
+                            <a class="hot-title__text--button" href="#">￥30 元</a>
+                        </dd>
+                    </dl>
+    </div>
+    <div class="dd grid">
+        <div class="di">山东信息技术学校</div>
+        <div class="di">数据与软件</div>
+        <div class="di">计算机应用</div>
+        <div class="di"> 订单管理</div>
+       
+    </div>
+    <div class="grids tt"  >
+        <div class="box origin1">
+
+        </div>
+        <div class="box origin2">
+
+        </div>
+        <div class="box origin3">
+
+        </div>
+    </div>
+</body>
+</html>

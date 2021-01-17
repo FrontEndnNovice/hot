@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>李白-凤求凰</title>
+    <style>
+        *{
+            margin: 0px;
+            list-style: none;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        body{
+            background: #7a8063;
+        }
+       .grid{
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+       }
+       .grid-cell-1,
+       .grid-cell-2,
+       .grid-cell-3,
+       .grid-cell-4,
+       .grid-cell-5,
+       .grid-cell-6{
+           flex-shrink: 1;
+       }
+       .grid-cell-1{
+           flex-grow: 1;
+       }
+       .grid-cell-2{
+           flex-grow: 2;
+       }
+       .grid-cell-3{
+           flex-grow: 3;
+       }
+       .grid-cell-4{
+           flex-grow: 4;
+       }
+       .grid-cell-5{
+           flex-grow: 5;
+       }
+       .grid-cell-6{
+           flex-grow: 6;
+       }
+       #toubu{
+           background-color:#5D6146;
+           height: 50px;
+           
+
+       }
+       ul li{
+           height: 50px;
+           line-height: 50px;
+           color: aliceblue;
+       }
+       .biaoshi{
+           font-size: 40px;
+           font-family: 宋体;
+           margin-left: 200px;
+       }
+       .sousuo{
+           margin-right: 200px;
+       }
+       .shouji{
+           margin-right: 300px;
+       }
+       .wode{
+          
+       }
+       .buxian{
+           border: solid 1px #ce8c40;
+           margin-left: 250px;
+           height: 200px;
+           width: 450px;
+           background-color: rgb(185, 165, 140);
+           margin-top: 20px; 
+           border-bottom-left-radius: 60px;
+           border-top-right-radius: 30px;  
+           box-shadow: inset 0px 0px 5px 10px #96836f; 
+           padding-right: 10px;
+     }
+     .buxian a{
+         margin-right: 10px;
+     }
+     .buxian img{
+         width: 100px;
+         float: left;
+         margin-top: 10px;
+         margin-right: 15px;
+         margin-left: 5px;
+         opacity: 0.8;
+     }
+     .poz{
+         text-align: center;
+     }
+     .poz dl{
+         float: left;
+         clear:left;
+         text-align: center;
+         
+         width: 150px;
+         margin-right: 50px;
+         margin-top: 20px;
+         border: solid 1px #000000;
+     }
+     .poz dl:hover{
+         width: 170px;
+         box-shadow: 0px 0px 15px #2c2c20;
+         color: aliceblue;
+     }
+     .laozi{
+         margin-left: 250px;
+     }
+     .hr{
+         background-color: #000000;
+     }
+    </style>
+</head>
+<body>
+    <header id="toubu">
+        <ul class="grid">
+            <li class="grid-cell-1 biaoshi">古诗文网</li>
+            <li class="grid-cell-1">推荐</li>
+            <li class="grid-cell-1">诗文</li>
+            <li class="grid-cell-1">名句</li>
+            <li class="grid-cell-1">作者</li>
+            <li class="grid-cell-1">古籍</li>
+            <li class="grid-cell-1 wode">我的</li>
+            <li class="grid-cell-1 shouji">手机版</li>
+            <li class="grid-cell-1 sousuo"><input type="flie"></li>
+        </ul>
+    </header>
+    <content>
+        
+        <div class=" buxian">
+            <h3>不限</h3>
+            <a class="" href="#">经部:</a>
+            <a class="" href="#">易经</a>
+            <a class="" href="#">书类</a>
+            <a class="" href="#">诗类</a>
+            <a class="" href="#">礼类</a>
+            <a class="" href="#">春秋类</a>
+            <a class="" href="#">孝经类</a> 
+            <a class="" href="#">五经总一类</a><br><hr style="color:#000000">
+            <a class="" href="#">史部：</a>
+            <a class="" href="#">正是篇</a>
+            <a class="" href="#">编年篇</a>
+            <a class="" href="#">纪事本末篇</a>
+            <a class="" href="#">杂史篇</a>
+        </div>
+        <div class="buxian">
+            <img src="../img/李白.jpg" alt="">
+            论语<br>
+            《论语》是儒家学派的经典著作之一，有孔子的弟子及其再传弟子攥住而成。他以语录体和对话文体为主。
+        </div>
+        <div class="poz">
+            <dl class="laozi">
+                <dt><img src="../img/老子.jpg" alt=""></dt>
+                <dd>《老子》，又称《道德真经》</dd>
+            </dl>
+            <dl>
+                <dt><img src="../img/论语.jpg" alt=""></dt>
+            <hr class="hr">
+                <dd>《论语》是儒家学派的经典著作之一</dd>
+            </dl>
+            <dl>
+                <dt><img src="../img/史记.jpg" alt=""></dt>
+                <dd>《史记》是由司马迁撰写的中国第一部纪传体通史</dd>
+            </dl>
+        </div>
+    </content>
+</body>
+</html>
